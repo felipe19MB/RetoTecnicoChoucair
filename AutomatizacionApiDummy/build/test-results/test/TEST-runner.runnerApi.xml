@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.runnerApi" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="CHMEPCZ4KDL3" time="0.0">
+  <properties/>
+  <system-out><![CDATA[16:54:52.791 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jmolinab/Documents/Prueba%20tecnica%20Choucair/AutomatizacionApiDummy/src/test/resources/features/dummyApi.feature
+16:54:52.954 [Test worker] INFO  - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+
+16:54:52.954 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@18b09463
+16:54:52.962 [Test worker] INFO  - Test Suite Started: Perform Crud methods for the dummy api
+16:54:52.978 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jmolinab/Documents/Prueba%20tecnica%20Choucair/AutomatizacionApiDummy/src/test/resources/features/dummyApi.feature
+16:54:52.978 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@18b09463
+16:54:52.978 [Test worker] INFO  - Test Suite Started: Perform Crud methods for the dummy api
+16:59:34.983 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+16:59:35.054 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+16:59:35.070 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4768b95c
+16:59:35.070 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Perform Crud methods for the dummy api:Perform a query, create, update, and delete process
+16:59:35.070 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4768b95c: Generating report for test outcome: Perform Crud methods for the dummy api:Perform a query, create, update, and delete process
+16:59:35.086 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Perform a query, create, update, and delete process to file C:\Users\jmolinab\Documents\Prueba tecnica Choucair\AutomatizacionApiDummy\target\site\serenity\815aac48f64cdd046cf5d39800f45727b2c01ade436e7f0e28fa98992efd2874.json (using temp file C:\Users\jmolinab\Documents\Prueba tecnica Choucair\AutomatizacionApiDummy\target\site\serenity\815aac48f64cdd046cf5d39800f45727b2c01ade436e7f0e28fa98992efd2874.jsona2e67ce5-4073-4dda-a8a1-da01233339e5)
+16:59:35.123 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Perform Crud methods for the dummy api:Perform a query, create, update, and delete process done
+16:59:35.123 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+16:59:35.123 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 53 ms
+16:59:35.123 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@11cc9e1e
+16:59:35.123 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Perform Crud methods for the dummy api:Perform a query, create, update, and delete process
+16:59:35.123 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@11cc9e1e: Generating report for test outcome: Perform Crud methods for the dummy api:Perform a query, create, update, and delete process
+16:59:35.570 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Perform Crud methods for the dummy api:Perform a query, create, update, and delete process done
+16:59:35.570 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+16:59:35.570 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 447 ms
+]]></system-out>
+  <system-err><![CDATA[?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>

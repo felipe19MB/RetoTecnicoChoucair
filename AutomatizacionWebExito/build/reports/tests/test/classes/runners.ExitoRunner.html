@@ -64,7 +64,10 @@
 <a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
@@ -80,10 +83,10 @@
 </table>
 </div>
 <div id="tab1" class="tab">
-<h2>Standard error</h2>
+<h2>Standard output</h2>
 <span class="code">
-<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jmolinab/Documents/Prueba%20tecnica%20Choucair/AutomatizacionWebExito/src/test/resources/features/exito.feature
-[Test worker] INFO  - 
+<pre>10:47:48.584 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jmolinab/Documents/Prueba%20tecnica%20Choucair/AutomatizacionWebExito/src/test/resources/features/exito.feature
+10:47:48.742 [Test worker] INFO  - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -99,15 +102,50 @@
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
 
-[Test worker] INFO  - Test Suite Started: Exito test
-[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jmolinab/Documents/Prueba%20tecnica%20Choucair/AutomatizacionWebExito/src/test/resources/features/exito.feature
-[Test worker] INFO  - Test Suite Started: Exito test
-log4j:WARN No appenders could be found for logger (freemarker.cache).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-?[32m?[1m?????????????????????????????????????????????????????????????????????????????[0m
+10:47:48.746 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@97c1d10b
+10:47:48.746 [Test worker] INFO  - Test Suite Started: Exito test
+10:47:48.796 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jmolinab/Documents/Prueba%20tecnica%20Choucair/AutomatizacionWebExito/src/test/resources/features/exito.feature
+10:47:48.800 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@97c1d10b
+10:47:48.800 [Test worker] INFO  - Test Suite Started: Exito test
+10:48:21.412 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+10:48:21.439 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53030 : 1
+10:48:21.439 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:50784 : 1
+10:48:21.439 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:62016 : 1
+10:48:21.440 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0x66780819, L:/127.0.0.1:53041 ! R:localhost/127.0.0.1:62016] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+10:48:21.440 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0x66780819, L:/127.0.0.1:53041 ! R:localhost/127.0.0.1:62016]
+10:48:21.440 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closed 1 connections out of 3 in 1 ms
+10:48:21.521 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+10:48:21.532 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@48d5ca17
+10:48:21.532 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Exito test:Selection of random products
+10:48:21.532 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@48d5ca17: Generating report for test outcome: Exito test:Selection of random products
+10:48:21.534 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Selection of random products to file C:\Users\jmolinab\Documents\Prueba tecnica Choucair\AutomatizacionWebExito\target\site\serenity\78da3fe7501c05b6f801f99c830e44c6450cfbb510c66f3127f63e8714c5e0a6.json (using temp file C:\Users\jmolinab\Documents\Prueba tecnica Choucair\AutomatizacionWebExito\target\site\serenity\78da3fe7501c05b6f801f99c830e44c6450cfbb510c66f3127f63e8714c5e0a6.json74ab79a0-a231-428c-ad5c-33d24305a5e7)
+10:48:21.565 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Exito test:Selection of random products done
+10:48:21.565 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+10:48:21.565 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 33 ms
+10:48:21.565 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1a819901
+10:48:21.568 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Exito test:Selection of random products
+10:48:21.568 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1a819901: Generating report for test outcome: Exito test:Selection of random products
+10:48:22.540 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53030 : 1
+10:48:22.540 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:50784 : 1
+10:48:22.584 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Exito test:Selection of random products done
+10:48:22.584 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+10:48:22.584 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 1019 ms
+10:48:22.645 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+10:48:22.645 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
+10:48:23.646 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53030 : 1
+10:48:23.647 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:50784 : 1
+10:48:24.743 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:53030 : 1
+10:48:24.743 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:50784 : 1
+10:48:25.018 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>?[32m?[1m?????????????????????????????????????????????????????????????????????????????[0m
 ?[32m?[1m??[0m View your Cucumber Report at:                                            ?[32m?[1m??[0m
-?[32m?[1m??[0m ?[1m?[36m?[4mhttps://reports.cucumber.io/reports/98009737-367d-4088-88e9-780a649e2fc0?[0m ?[32m?[1m??[0m
+?[32m?[1m??[0m ?[1m?[36m?[4mhttps://reports.cucumber.io/reports/6e59375b-18e2-4295-b3d1-239d489a044d?[0m ?[32m?[1m??[0m
 ?[32m?[1m??[0m                                                                          ?[32m?[1m??[0m
 ?[32m?[1m??[0m ?[1mThis report will self-destruct in 24h.?[0m                                   ?[32m?[1m??[0m
 ?[32m?[1m??[0m Keep reports forever: ?[4m?[1m?[36mhttps://reports.cucumber.io/profile?[0m                ?[32m?[1m??[0m
@@ -122,7 +160,7 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 10/03/2023 04:56:04 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 11/03/2023 10:48:25 AM</p>
 </div>
 </div>
 </body>

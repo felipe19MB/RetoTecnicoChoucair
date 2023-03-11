@@ -1,49 +1,76 @@
-
-buildscript {
-    dependencies {
-        classpath('net.serenity-bdd:serenity-gradle-plugin:2.0.81')
-    }
-}
-
-plugins {
-    id 'java'
-    id 'test-report-aggregation'
-}
-
-group 'org.example'
-version '1.0-SNAPSHOT'
-apply plugin: 'net.serenity-bdd.aggregator'
+defaultTasks 'clean', 'test', 'aggregate'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
-compileJava.options.encoding = 'UTF-8'
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.3.2"
+    }
+}
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+sourceCompatibility = 8
+targetCompatibility = 8
 
 tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
+    options.encoding = "UTF-8"
+}
+
+ext {
+    slf4jVersion = '1.7.7'
+    serenityCoreVersion = '3.2.4'
+    serenityCucumberVersion = '3.2.4'
+    junitVersion = '4.13.2'
+    assertJVersion = '3.23.1'
+    logbackVersion = '1.2.11'
+    jacksonAnnotations = "2.13.3"
 }
 
 dependencies {
+    implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}",
+            "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
+            "ch.qos.logback:logback-classic:${logbackVersion}",
+            "com.fasterxml.jackson.core:jackson-annotations:${jacksonAnnotations}",
+            "junit:junit:${junitVersion}",
+            "org.assertj:assertj-core:${assertJVersion}",
+            "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}"
 
-    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.6.0'
-    testImplementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '3.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.4.2'
-    implementation group: 'net.serenity-bdd', name: 'serenity-reports', version: '3.4.2'
-    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.4.3'
-    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.19.0'
-    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
-    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.4'
-    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.9.1'
-    testImplementation 'net.serenity-bdd:serenity-core:1.1.1'
-    testImplementation 'net.serenity-bdd:serenity-junit:1.1.1'
-    testImplementation('org.assertj:assertj-core:1.7.0')
-    testImplementation('org.slf4j:slf4j-simple:1.7.7')
-    implementation 'net.serenity-bdd:serenity-core:1.9.9'
-    implementation 'net.serenity-bdd:serenity-screenplay:1.9.9'
-    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+
+
+
 }
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+//    maxParallelForks = 8
+}
+
+serenity {
+    // Specify the root package of any JUnit acceptance tests
+    testRoot=""
+
+    // Specify the root directory of any Cucumber feature files
+    requirementsDir = "src/test/resources/features"
+}
+
 gradle.startParameter.continueOnFailure = true
 
+test.finalizedBy(aggregate)

@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 import static co.com.choucair.automation.android.userinterface.InitialPage.BTNREGISTER;
 
-public class InitialPageTask implements Task {
+public class InitialRegister implements Task {
 
 
 
@@ -21,9 +21,9 @@ public class InitialPageTask implements Task {
         );
     }
 
-    public static InitialPageTask register(){
+    public static InitialRegister register(){
 
-        return Tasks.instrumented(InitialPageTask.class);
+        return Tasks.instrumented(InitialRegister.class);
     }
 
 

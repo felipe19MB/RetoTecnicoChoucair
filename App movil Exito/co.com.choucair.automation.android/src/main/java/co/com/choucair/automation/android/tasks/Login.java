@@ -16,8 +16,8 @@ public class Login implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue("sato.d.95@gmail.com").into(LoginPage.EMAIL),
-                Enter.theValue("Exito2023").into(LoginPage.PASSWORD),
+                Enter.theValue("juanfe35mb@gmail.com").into(LoginPage.EMAIL),
+                Enter.theValue("Felipe1998MB").into(LoginPage.PASSWORD),
                 WaitUntil.the(LoginPage.BTNINGRESAR, isClickable()).forNoMoreThan(5).seconds(),
                 Click.on(LoginPage.BTNINGRESAR)
         );

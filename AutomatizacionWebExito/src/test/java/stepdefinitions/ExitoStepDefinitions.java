@@ -21,6 +21,7 @@ import net.thucydides.core.annotations.Managed;
 import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import static co.com.choucair.retotecnico.exitoweb.userinterface.ExitoPage.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -32,8 +33,10 @@ public class ExitoStepDefinitions {
 
     @Before
     public void setUp() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled("actor");
     }
